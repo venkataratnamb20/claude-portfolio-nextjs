@@ -1,0 +1,222 @@
+##############################################
+# Design System Configuration
+# Portfolio: John Doe — Senior AI/ML Architect
+##############################################
+
+meta:
+  theme: "dark-futuristic"
+  description: >
+    A high-contrast, deep-space inspired dark theme combining neon cyan
+    accents with deep violet highlights. Evokes cutting-edge AI technology
+    and technical precision. Typography uses Syne for display headings
+    and DM Sans for body copy — unusual pairing that feels both engineered
+    and editorial.
+
+# ── Colors ────────────────────────────────────────────────────────────────────
+colors:
+  background:   "#0a0a0f"     # Near-black, space-dark base
+  surface:      "#111118"     # Slight lift for section backgrounds
+  card:         "#1a1a2e"     # Card / panel background
+  card-border:  "#2a2a4e"     # Subtle card border
+  primary:      "#00d4ff"     # Cyan neon — links, CTAs, highlights
+  primary-dim:  "#0099bb"     # Hover state for primary
+  accent:       "#7c3aed"     # Deep violet — secondary accents, gradients
+  accent-bright:"#9d5dff"     # Brighter violet for glow effects
+  text:         "#e2e8f0"     # Main readable text
+  text-muted:   "#94a3b8"     # Secondary text, captions
+  muted:        "#64748b"     # Disabled / placeholder text
+  border:       "#1e293b"     # Subtle borders
+  success:      "#22c55e"     # Green indicators
+  warning:      "#f59e0b"     # Amber warnings
+  error:        "#ef4444"     # Red errors
+
+  gradients:
+    hero: "linear-gradient(135deg, #0a0a0f 0%, #0d0d1a 40%, #150d2e 100%)"
+    primary: "linear-gradient(135deg, #00d4ff 0%, #7c3aed 100%)"
+    card-hover: "linear-gradient(135deg, rgba(0,212,255,0.05) 0%, rgba(124,58,237,0.08) 100%)"
+    glow-cyan: "radial-gradient(ellipse at center, rgba(0,212,255,0.15) 0%, transparent 70%)"
+    glow-violet: "radial-gradient(ellipse at center, rgba(124,58,237,0.15) 0%, transparent 70%)"
+
+# ── Typography ─────────────────────────────────────────────────────────────────
+typography:
+  fonts:
+    display:
+      family: "Syne"
+      weights: [700, 800]
+      source: "Google Fonts"
+      usage: "Section headings, hero text, name"
+    heading:
+      family: "Syne"
+      weights: [600, 700]
+      source: "Google Fonts"
+      usage: "Card titles, sub-headings, nav items"
+    body:
+      family: "DM Sans"
+      weights: [300, 400, 500]
+      source: "Google Fonts"
+      usage: "Body copy, descriptions, captions"
+    mono:
+      family: "JetBrains Mono"
+      weights: [400, 500]
+      source: "Google Fonts"
+      usage: "Code snippets, tech tags, metadata"
+
+  scale:
+    xs:   "0.75rem"     # 12px
+    sm:   "0.875rem"    # 14px
+    base: "1rem"        # 16px
+    lg:   "1.125rem"    # 18px
+    xl:   "1.25rem"     # 20px
+    2xl:  "1.5rem"      # 24px
+    3xl:  "1.875rem"    # 30px
+    4xl:  "2.25rem"     # 36px
+    5xl:  "3rem"        # 48px
+    6xl:  "3.75rem"     # 60px
+    7xl:  "4.5rem"      # 72px
+
+  line-heights:
+    tight:  1.2
+    snug:   1.375
+    normal: 1.5
+    relaxed: 1.625
+
+# ── Spacing Scale ──────────────────────────────────────────────────────────────
+spacing:
+  base: 4         # 4px base unit
+  scale:
+    0:   "0"
+    1:   "4px"
+    2:   "8px"
+    3:   "12px"
+    4:   "16px"
+    5:   "20px"
+    6:   "24px"
+    8:   "32px"
+    10:  "40px"
+    12:  "48px"
+    16:  "64px"
+    20:  "80px"
+    24:  "96px"
+    32:  "128px"
+
+  section-padding: "96px 0"
+  container-max:   "1200px"
+  container-pad:   "0 24px"
+
+# ── Border Radius ──────────────────────────────────────────────────────────────
+border-radius:
+  none:  "0"
+  sm:    "4px"
+  md:    "8px"
+  lg:    "12px"
+  xl:    "16px"
+  2xl:   "24px"
+  3xl:   "32px"
+  full:  "9999px"
+
+# ── Shadows & Glows ────────────────────────────────────────────────────────────
+effects:
+  shadows:
+    card:         "0 4px 24px rgba(0,0,0,0.4)"
+    card-hover:   "0 8px 40px rgba(0,212,255,0.12), 0 4px 16px rgba(0,0,0,0.6)"
+    glow-sm:      "0 0 12px rgba(0,212,255,0.3)"
+    glow-md:      "0 0 24px rgba(0,212,255,0.4)"
+    glow-lg:      "0 0 48px rgba(0,212,255,0.2)"
+    violet-glow:  "0 0 24px rgba(124,58,237,0.4)"
+    text-glow:    "0 0 20px rgba(0,212,255,0.5)"
+
+  backdrop:
+    navbar: "blur(12px) saturate(180%)"
+    card:   "blur(4px)"
+
+# ── Animations ─────────────────────────────────────────────────────────────────
+animations:
+  easing:
+    smooth:     "cubic-bezier(0.4, 0, 0.2, 1)"
+    spring:     "cubic-bezier(0.34, 1.56, 0.64, 1)"
+    in:         "cubic-bezier(0.4, 0, 1, 1)"
+    out:        "cubic-bezier(0, 0, 0.2, 1)"
+    in-out:     "cubic-bezier(0.4, 0, 0.2, 1)"
+
+  durations:
+    fast:    "150ms"
+    normal:  "300ms"
+    slow:    "500ms"
+    slower:  "800ms"
+
+  keyframes:
+    float:
+      description: "Gentle vertical oscillation for decorative elements"
+      steps: "0%/100% → translateY(0), 50% → translateY(-20px)"
+      duration: "6s"
+    pulse-glow:
+      description: "Pulsing glow effect for accent elements"
+      steps: "0%/100% → opacity 0.6 scale 1, 50% → opacity 1 scale 1.05"
+      duration: "2s"
+    gradient-shift:
+      description: "Animated gradient background"
+      steps: "0% → backgroundPosition 0% 50%, 50% → 100% 50%, 100% → 0% 50%"
+      duration: "8s"
+    scan-line:
+      description: "Horizontal scan line for cyberpunk feel"
+      duration: "4s"
+    typewriter:
+      description: "Character-by-character text reveal"
+      steps: "JavaScript-driven, character interval 80ms"
+
+  framer-motion:
+    fade-up:
+      initial: "{ opacity: 0, y: 40 }"
+      animate: "{ opacity: 1, y: 0 }"
+      transition: "{ duration: 0.6, ease: 'easeOut' }"
+    stagger-children: "0.1s"
+    card-hover: "{ scale: 1.03, y: -4 }"
+
+# ── Breakpoints ────────────────────────────────────────────────────────────────
+breakpoints:
+  sm:   "640px"
+  md:   "768px"
+  lg:   "1024px"
+  xl:   "1280px"
+  2xl:  "1536px"
+
+# ── Components ─────────────────────────────────────────────────────────────────
+components:
+  navbar:
+    height:       "72px"
+    bg:           "rgba(10, 10, 15, 0.85)"
+    border:       "1px solid rgba(30, 41, 59, 0.8)"
+    backdrop:     "blur(12px)"
+    sticky:       true
+    z-index:      1000
+
+  hero:
+    min-height:   "100vh"
+    overlay:      "rgba(10, 10, 15, 0.6)"
+    particle-count: 60
+
+  card:
+    padding:      "24px"
+    radius:       "12px"
+    border:       "1px solid #2a2a4e"
+    transition:   "all 300ms ease"
+
+  button:
+    primary:
+      bg:       "#00d4ff"
+      text:     "#0a0a0f"
+      hover-bg: "#0099bb"
+      radius:   "8px"
+      padding:  "12px 28px"
+    outline:
+      border:   "1px solid #00d4ff"
+      text:     "#00d4ff"
+      hover-bg: "rgba(0, 212, 255, 0.08)"
+
+  badge:
+    bg:       "rgba(0, 212, 255, 0.1)"
+    text:     "#00d4ff"
+    border:   "1px solid rgba(0, 212, 255, 0.2)"
+    radius:   "9999px"
+    padding:  "4px 12px"
+    font:     "JetBrains Mono, 12px"

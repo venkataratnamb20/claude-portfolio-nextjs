@@ -70,7 +70,7 @@ export default function ArticlePage({ params }: Props) {
 
       <div className="container-custom">
         {/* Back link */}
-        <AnimatedSection className="mt-8 mb-10">
+        <AnimatedSection immediate className="mt-8 mb-10">
           <Link
             href="/articles"
             className="inline-flex items-center gap-2 text-text-muted hover:text-primary transition-colors text-sm font-mono"
@@ -85,7 +85,7 @@ export default function ArticlePage({ params }: Props) {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-12">
           {/* Main content */}
           <div>
-            <AnimatedSection>
+            <AnimatedSection immediate>
               {/* Project badge */}
               <div className="mb-4">
                 <Link
@@ -132,7 +132,7 @@ export default function ArticlePage({ params }: Props) {
 
           {/* Sidebar */}
           <aside>
-            <AnimatedSection delay={0.15} className="sticky top-28 space-y-6">
+            <AnimatedSection immediate delay={0.15} className="sticky top-28 space-y-6">
               {/* Author card */}
               <div
                 className="rounded-xl p-5"

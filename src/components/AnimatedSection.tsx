@@ -8,6 +8,7 @@ interface AnimatedSectionProps {
   className?: string
   delay?: number
   direction?: 'up' | 'down' | 'left' | 'right' | 'fade'
+  immediate?: boolean
 }
 
 export default function AnimatedSection({
@@ -15,9 +16,10 @@ export default function AnimatedSection({
   className = '',
   delay = 0,
   direction = 'up',
+  immediate = false,
 }: AnimatedSectionProps) {
   const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once: true, margin: '-80px' })
+  const isInView = useInView(ref, { once: true, margin: '0px' })
 
   const variants = {
     hidden: {
@@ -37,7 +39,7 @@ export default function AnimatedSection({
       ref={ref}
       className={className}
       initial="hidden"
-      animate={isInView ? 'visible' : 'hidden'}
+      animate={immediate || isInView ? 'visible' : 'hidden'}
       variants={variants}
       transition={{
         duration: 0.6,

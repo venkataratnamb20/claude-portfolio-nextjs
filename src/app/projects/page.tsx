@@ -26,7 +26,7 @@ export default function ProjectsPage() {
           style={{ background: 'rgba(0,212,255,0.05)' }}
         />
         <div className="container-custom relative z-10 text-center">
-          <AnimatedSection>
+          <AnimatedSection immediate>
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="h-px w-12 bg-primary opacity-60" />
               <span className="section-label">Open source</span>
@@ -45,7 +45,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Stats bar */}
-      <AnimatedSection delay={0.2}>
+      <AnimatedSection immediate delay={0.2}>
         <div className="container-custom mb-14">
           <div
             className="rounded-2xl p-6 grid grid-cols-2 md:grid-cols-4 gap-6"
